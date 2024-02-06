@@ -1,19 +1,19 @@
 import os
 import sys
-sys.path.append(os.path.dirname(__file__))
+sys.path.append(os.path.dirname(__file__).rsplit('/', 1)[0])
 from build import fastpreprocess
 import numpy as np
 import cv2
 import tqdm
 from time import time
 
-frame = cv2.imread("demo.jpg").astype(np.uint8)
+frame = cv2.imread("test_example/demo.jpg").astype(np.uint8)
 print("input: ", frame.shape)
 
 MEAN = np.array([103.53, 116.28, 123.675], dtype=np.float32).reshape((3, 1, 1))
 STD = np.array([57.375, 57.12, 58.395], dtype=np.float32).reshape((3, 1, 1))
 
-TEST_TIMES = 10
+TEST_TIMES = 100
 
 for i in tqdm.trange(TEST_TIMES):
     frame1 = frame.transpose(2, 0, 1)
