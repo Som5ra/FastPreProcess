@@ -1,0 +1,37 @@
+#include <opencv2/opencv.hpp>
+#include <iostream>
+#include <pybind11/pybind11.h>
+namespace py = pybind11;
+
+
+cv::Mat _read(std::string img_path)
+{
+    std::cout << img_path << "\n";
+    return cv::imread(img_path);
+}
+
+cv::Mat _resize(cv::Mat &src)
+{
+    using namespace cv;
+
+    Mat resized_img;
+    resize(src, resized_img, cv::Size(src.cols * 0.75, src.rows * 0.75), 0, 0, INTER_LINEAR);
+    return resized_img;
+    // namedWindow( "src", WINDOW_AUTOSIZE );
+    // imshow("src", src);
+    // waitKey(0);
+    // resize()
+}
+// template<typename T> T template_test_add(T &a, T &b)
+// // int _test(int &a, int &b)
+// {
+//     std::cout << a + b << "\n";
+//     return a + b;
+// }
+
+PYBIND11_MODULE(fastpreprocess, m) {
+    m.doc() = "C++ Oencv Resize"; // optional module docstring
+    m.def("read", &_read);
+    m.def("resize", &_resize);
+    // m.def("test", &template_test_add<long long>);
+}

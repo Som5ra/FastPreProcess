@@ -1,0 +1,7 @@
+/media/risksis/HDD_1/FastPreProcess/build/CMakeFiles/fastpreprocess.dir
+/media/risksis/HDD_1/FastPreProcess/build/CMakeFiles/test.dir
+/media/risksis/HDD_1/FastPreProcess/build/CMakeFiles/edit_cache.dir
+/media/risksis/HDD_1/FastPreProcess/build/CMakeFiles/rebuild_cache.dir
+/media/risksis/HDD_1/FastPreProcess/build/pybind11/CMakeFiles/test.dir
+/media/risksis/HDD_1/FastPreProcess/build/pybind11/CMakeFiles/edit_cache.dir
+/media/risksis/HDD_1/FastPreProcess/build/pybind11/CMakeFiles/rebuild_cache.dir
