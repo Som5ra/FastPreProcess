@@ -46,23 +46,3 @@ if(NOT DEFINED OMP_SET AND OPENMP_FOUND)
     set(OMP_SET ON)
 endif()
 
-
-# find_package(OpenCV REQUIRED)
-# include_directories(${OpenCV_INCLUDE_DIRS})
-
-# # find_package(Python COMPONENTS Interpreter Development)
-# # include_directories(${PYTHON_INCLUDE_DIRS})
-
-# set(Python3_ROOT_DIR "/home/risksis/anaconda3/envs/fastpreprocess")
-# find_package(Python3 3.9 EXACT COMPONENTS Interpreter Development REQUIRED)
-
-# target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
-
-
-# # find_package(pybind11 CONFIG REQUIRED)
-# add_subdirectory(pybind11)
-# pybind11_add_module(fastpreprocess src/fast_resize.cpp)
-
-# # add_executable(fastpreprocess src/main.cpp)
-
-

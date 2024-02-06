@@ -12,7 +12,7 @@ template<typename in_t, typename out_t> py::array_t<out_t> hwc_to_chw(py::array_
     size_t input_shape[] = {info.shape[0], info.shape[1], info.shape[2]};
 
     out_t *result = new out_t[info.shape[0] * info.shape[1] * info.shape[2]];
-    _hwc_to_chw(input_array, input_shape, result);
+    _hwc_to_chw(input_array, input_shape, result, flip_rb);
 
     py::capsule free_when_done(result, [](void *f) {
         delete (out_t*)f;
@@ -30,7 +30,7 @@ template<typename in_t, typename out_t> py::array_t<out_t> hwc_to_chw_normalize(
     size_t input_shape[] = {info.shape[0], info.shape[1], info.shape[2]};
 
     out_t *result = new out_t[info.shape[0] * info.shape[1] * info.shape[2]];
-    _hwc_to_chw_normalize(input_array, input_shape, mean.data(), std.data(), result);
+    _hwc_to_chw_normalize(input_array, input_shape, mean.data(), std.data(), result, flip_rb);
 
     py::capsule free_when_done(result, [](void *f) {
         delete (out_t*)f;
@@ -59,6 +59,8 @@ template<typename in_t, typename out_t> py::array_t<out_t> chw_channel_normalize
         free_when_done
     );
 }
+
+
 
 PYBIND11_MODULE(fastpreprocess, m) {
     m.def("hwc_to_chw", &hwc_to_chw<uint8_t, float_t>, py::arg("input"), py::arg("flip_rb") = false, py::return_value_policy::take_ownership);
