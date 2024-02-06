@@ -1,13 +1,13 @@
+import os
 import sys
-sys.path.append("/media/risksis/HDD_1/FastPreProcess")
-# os.environ["PYTHONPATH"] = 
+sys.path.append(os.path.dirname(__file__).rsplit('/', 1)[0])
 from build import fastpreprocess
 import numpy as np
 import cv2
 import tqdm
 from time import time
 
-frame = cv2.imread("/home/risksis/lecas_detection_2023/rts-top.JPG").astype(np.uint8)
+frame = cv2.imread("demo.jpg").astype(np.uint8)
 print("input: ", frame.shape)
 
 MEAN = np.array([103.53, 116.28, 123.675], dtype=np.float32).reshape((3, 1, 1))
