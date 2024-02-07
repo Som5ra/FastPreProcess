@@ -8,7 +8,7 @@
 
 
 
-### Implemented:
+### Implemented
 
 1. **hwc to chw (slower than numpy.transpose)**: array(768, 1024, 3) -> array(3, 768, 1024)
 2. **chw channel normalization**: e.g. array(3, 768, 1024) -> (array(3, 768, 1024) - MEAN) / STD
