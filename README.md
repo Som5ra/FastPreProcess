@@ -6,15 +6,17 @@
 - Python 3.9
 
 ### Implemented: 
-    - hwc to chw (slower than numpy.transpose)
-    - hwc to chw with normalization
-    - chw channel normalization
-
+- hwc to chw (slower than numpy.transpose)
+    - e.g. array(768, 1024, 3) -> array(3, 768, 1024)
+- chw channel normalization
+    - e.g. array(3, 768, 1024) -> (array(3, 768, 1024) - MEAN) / STD
+- **hwc to chw with normalization (the fastest)**
+    - **e.g. array(768, 1024, 3) -> (array(3, 768, 1024) - MEAN) / STD**
 
 ### Requirements:
-    - pybind11
-    - numpy
-    - opencv
+- pybind11
+- numpy
+- opencv
 
 - Build:
 ```
