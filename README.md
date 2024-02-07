@@ -15,12 +15,12 @@
 3. **hwc to chw with normalization (the fastest)**: **e.g. array(768, 1024, 3) -> (array(3, 768, 1024) - MEAN) / STD**
 
 ### Performance
-- MIN / MAX / AVG
-- iteration / second
 
-|                    |        Python       |          Cpp           |      Cpp (batched)     | 
+- Iteration / econd
+- MIN / MAX / AVG
+
+|      Batch Num     |        Python       |          Cpp           |      Cpp (batched)     | 
 |--------------------|---------------------|------------------------|------------------------|
-|      Batch Num     |                     |                        |                        |
 |         32         | 23.67 / 24.43 / 24.11 | 203.49 / 343.20 / 245.02 | 207.02 / 266.26 / 228.76 |
 
 
