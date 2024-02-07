@@ -10,7 +10,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS true)
 
 
 # Python Interpreter
-set(Python3_ROOT_DIR "/home/risksis/anaconda3/envs/fastpreprocess")
+set(Python3_ROOT_DIR "/path/to/your_python_env")
 find_package(Python3 3.9 EXACT COMPONENTS Interpreter Development REQUIRED)
 message("Python_FOUND:${Python3_EXECUTABLE}")
 
