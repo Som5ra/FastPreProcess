@@ -17,6 +17,7 @@
 ### Performance
 - MIN / MAX / AVG
 - iteration / second
+
 |                    |        Python       |          Cpp           |      Cpp (batched)     | 
 |--------------------|---------------------|------------------------|------------------------|
 |      Batch Num     |                     |                        |                        |
