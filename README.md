@@ -33,9 +33,11 @@
 
 
 
-### Build
+## Build
 
 ```
+# Edit set(Python3_ROOT_DIR "/path/to/your_python_env") in CMakeList.txt
+
 mkdir -p build
 cmake --build ./build --config Release --target all -j 34 --
 ```
