@@ -1,12 +1,17 @@
 # FastPreProcess
 
-- Implemented: 
+### Test Envirnoment:
+- Ubuntu 22.04
+- i9-13900K
+- Python 3.9
+
+### Implemented: 
     - hwc to chw (slower than numpy.transpose)
     - hwc to chw with normalization
     - chw channel normalization
 
 
- - Requirements:
+### Requirements:
     - pybind11
     - numpy
     - opencv
