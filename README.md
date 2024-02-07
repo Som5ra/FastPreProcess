@@ -1,13 +1,5 @@
 # FastPreProcess
 
-### Test Envirnoment
-
-- Ubuntu 22.04
-- Intel i9-13900K
-- Python 3.9
-
-
-
 ### Implemented
 
 1. **hwc to chw (slower than numpy.transpose)**: array(768, 1024, 3) -> array(3, 768, 1024)
@@ -18,6 +10,11 @@
 
 - Iteration / econd
 - MIN / MAX / AVG
+- Test Image: (640, 427, 3)
+- Test Envirnoment
+    - Ubuntu 22.04
+    - Intel i9-13900K
+    - Python 3.9
 
 |      Batch Num     |        Python       |          Cpp           |      Cpp (batched)     | 
 |--------------------|---------------------|------------------------|------------------------|
