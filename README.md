@@ -19,6 +19,7 @@
 
 
 - **hwc to chw with normalization, hwc to chw with normalization_batched:**
+
 |      Batch Size    |        Python       |          Cpp           |      Cpp (batched)     | 
 |--------------------|---------------------|------------------------|------------------------|
 |         32         | 23.67 / 24.43 / 24.11 | 203.49 / 343.20 / 245.02 | 207.02 / 266.26 / 228.76 |
