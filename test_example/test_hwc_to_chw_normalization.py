@@ -30,7 +30,7 @@ print(rgb_frame2[0, 0: 3, 0: 3])
 print("".join(["*"] * 100))
 
 
-TEST_TIMES = 100
+TEST_TIMES = 1000
 
 for i in tqdm.trange(TEST_TIMES):
     frame1 = frame.transpose(2, 0, 1)

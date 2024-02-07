@@ -32,7 +32,7 @@
 			{
 				"command" : 3,
 				"file" : 3,
-				"line" : 30,
+				"line" : 33,
 				"parent" : 0
 			},
 			{
@@ -62,19 +62,19 @@
 			{
 				"command" : 4,
 				"file" : 3,
-				"line" : 33,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 3,
-				"line" : 22,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 3,
-				"line" : 26,
+				"line" : 29,
 				"parent" : 0
 			}
 		]
@@ -85,7 +85,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -fopenmp -O3 -DNDEBUG -fPIC -fvisibility=hidden"
+					"fragment" : "-Wall -Wextra -fopenmp -O3 -fPIC -fvisibility=hidden"
 				},
 				{
 					"backtrace" : 5,

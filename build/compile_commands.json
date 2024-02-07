@@ -1,7 +1,7 @@
 [
 {
   "directory": "/media/risksis/HDD_1/FastPreProcess/build",
-  "command": "/usr/bin/g++ -Dfastpreprocess_EXPORTS -isystem /media/risksis/HDD_1/FastPreProcess/pybind11/include -isystem /home/risksis/anaconda3/envs/fastpreprocess/include/python3.9 -isystem /usr/local/include/opencv4  -fopenmp -O3 -DNDEBUG -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -o CMakeFiles/fastpreprocess.dir/src/preprocess_pybind11.cpp.o -c /media/risksis/HDD_1/FastPreProcess/src/preprocess_pybind11.cpp",
+  "command": "/usr/bin/g++ -Dfastpreprocess_EXPORTS -isystem /media/risksis/HDD_1/FastPreProcess/pybind11/include -isystem /home/risksis/anaconda3/envs/fastpreprocess/include/python3.9 -isystem /usr/local/include/opencv4 -Wall -Wextra -fopenmp -O3 -fPIC -fvisibility=hidden -flto -fno-fat-lto-objects -o CMakeFiles/fastpreprocess.dir/src/preprocess_pybind11.cpp.o -c /media/risksis/HDD_1/FastPreProcess/src/preprocess_pybind11.cpp",
   "file": "/media/risksis/HDD_1/FastPreProcess/src/preprocess_pybind11.cpp",
   "output": "CMakeFiles/fastpreprocess.dir/src/preprocess_pybind11.cpp.o"
 }
